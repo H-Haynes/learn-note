@@ -98,8 +98,5 @@ Linux的文件目录遵循FHS协议（FileSystem Hierarchy Standard），即所�
 * **/proc**  存放系统内核，进程，网络等
 * **/sys**   存放系统和内核相关信息
 * **lost** **found** 文件系统发生错误时，文件碎片存放在此区域
-* **cat filename :grep "cont"** 管道过滤，在指定文件中查找包含指定的内容( cat为查找命令，grep为过滤命令filename为文件名,cont为查找内容)
-* **cat filename :grep "cont1" :grep "cont2"** 再次过滤
-* **ll :grep "node"**   仅显示含有node的文件信息
 
 tips:文件权限请查看《Linux命令与权限》
