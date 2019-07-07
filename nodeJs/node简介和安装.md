@@ -59,18 +59,19 @@ NodeJS是一门后端语言，它需要运行在Linux系统下
 
 ### 安装Node
 
-  安装node：在网上查找到node的安装url，使用命令wget url来安装它，如  `wget <https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz>`
-  **查看当前目录命令**
-    ll或者ls，后者只显示文件名，且横向排列,前者显示文件详细信息并纵向排列,查看到node包名称,它有两层包，需要两次解压
-  1.使用解压命令解压刚才下载的node包,`xz -d node包名字`
-  2.使用解压命令:`tar -xf 上次解压完的名字`
-    解压完成就能使用ls查看到解压完成的文件夹（蓝色的）
-    进入这个文件夹，将node程序连接到应用目录(node程序位于解压完的文件夹的bin目录)：
-    `ln -s ~/解压完的文件夹/bin/node  /usr/bin/node`
-    `ln -s ~/解压完的文件夹/bin/npm   /usr/bin/npm`
-    `ln -s ~/解压完的文件夹/bin/npx   /usr/bin/npx`
-    这样就能使用node,npm,npx命令了
-    *不必手打文件夹名，输入前面的字符按tab能自动补全*
+  安装node：在网上查找到node的安装url，使用命令wget url来安装它，如  
+    `wget <https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz>`  
+  **查看当前目录命令**  
+    ll或者ls，后者只显示文件名，且横向排列,前者显示文件详细信息并纵向排列,查看到node包名称,它有两层包，需要两次解压  
+  1.使用解压命令解压刚才下载的node包,`xz -d node包名字`  
+  2.使用解压命令:`tar -xf 上次解压完的名字`  
+    解压完成就能使用ls查看到解压完成的文件夹（蓝色的）  
+    进入这个文件夹，将node程序连接到应用目录(node程序位于解压完的文件夹的bin目录)：  
+    `ln -s ~/解压完的文件夹/bin/node  /usr/bin/node`  
+    `ln -s ~/解压完的文件夹/bin/npm   /usr/bin/npm`  
+    `ln -s ~/解压完的文件夹/bin/npx   /usr/bin/npx`  
+    这样就能使用node,npm,npx命令了  
+    *不必手打文件夹名，输入前面的字符按tab能自动补全*  
 
 ### 根目录路径
 
