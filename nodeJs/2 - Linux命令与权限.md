@@ -41,6 +41,8 @@
     * si软件终端cpu占比,
     * st实时cup占比
 * `systemctl disable firewalld` 关闭防火墙( 需reboot才有效)
+* `kill ID` 结束进程，ID使用ps aux查看
+* `killall -u username` 结束指定用户所有进程
   
 ## 用户命令
 
