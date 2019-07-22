@@ -15,7 +15,8 @@
 * `alter database test character set utf8;`修改test库的编码
 * `alter table stu default character set utf8`    修改stu表的编码
 * `alter table stu convert to character set utf8`修改stu表所有字段的编码
-
+* `ALTER TABLE table_name DROP COLUMN field_name`删除table_name表中的field_name字段
+  
 ### 增删改查
 
 * `insert into student (num,age,name,class) values (1024,17,"陈凡",14)` 向student表新增一条数据，包含num,age,name,class属性和值
