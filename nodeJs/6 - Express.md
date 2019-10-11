@@ -6,7 +6,6 @@
 
 http模块实际用得并不多，在很多方面有很大的局限性，很难实现功能，比如上传文件，所以更多的是使用其他框架来实现这些功能，express就是一个很好的框架
 
-
 ## 使用express
 
 ### 搭建静态文件服务器
@@ -23,6 +22,19 @@ app有get和post方法，分别对应相应的请求方式,
 
 该方法接收两个参数，第一个参数为接口的名字，第二个为一个函数，这个函数也有两个参数，分别是:request和response
 这二者和http里的内容一致
+
+#### 参数读取
+
+想要获取到请求的参数，get和post的获取方式不同：  
+
+* GET  get方式的请求可以使用url依赖包来解析，使用`request.parse(request.url,true).query`来取得data对象（因为GET请求的数据是拼接在url的），也可以使用它来获取cookie等数据;
+* POST  post请求的数据需要使用body-parser依赖包:
+
+        const bodyParser = require('body-parser');
+        app.use(bodyParser.json({limit:'1mb'}));//设置解析json格式数据
+        app.use(bodyParser.urlencoded({extended:false}));//参数编码，必须在上一项后面
+
+这样在请求中就能使用request.body来获取到了（踩坑提醒:axios的记得post使用qs模块的stringify来转换数据）
 
 ## Cookie操作
 
@@ -90,3 +102,4 @@ app有get和post方法，分别对应相应的请求方式,
 
 先要确定想将文件存储在数据库还是在本地磁盘，如果是想要存储在本地磁盘，需要进行相应的设置:
 `let uploadSingle = multer({dest:'./file'})`设置存储位置(当前目录下的file目录)
+
