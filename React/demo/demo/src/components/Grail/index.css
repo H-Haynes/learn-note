@@ -1,0 +1,17 @@
+.grail{
+    display:flex;
+    background:#fff;
+    width:100%;
+}
+.grail-main{
+    order:2;
+    flex:1 1 auto;
+}
+.grail-left{
+    order:1;
+    border-right:1px solid #e7e7eb;
+}
+.grail-right{
+    order:3;
+    border-left:1px solid #e7e7eb
+}
