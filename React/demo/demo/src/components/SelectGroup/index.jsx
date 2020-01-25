@@ -11,7 +11,7 @@ export default class SelectGroup extends Component {
     static propTypes = {
         name:PropTypes.string.isRequired,
         datas:types.datas.isRequired,
-        selected:PropTypes.oneOf([PropTypes.string,PropTypes.number])
+        selected:PropTypes.oneOfType([PropTypes.string,PropTypes.number])
     }
 
     handleChange= e =>{

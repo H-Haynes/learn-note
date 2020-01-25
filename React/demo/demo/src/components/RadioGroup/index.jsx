@@ -10,7 +10,7 @@ export default class RadioGroup extends Component {
 
     static propTypes = {
         name:PropTypes.string.isRequired,
-        choose:PropTypes.oneOf([PropTypes.number,PropTypes.string]),
+        choose:PropTypes.oneOfType([PropTypes.number,PropTypes.string]),
         datas:types.datas.isRequired
         }
 

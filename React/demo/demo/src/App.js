@@ -7,14 +7,20 @@ import FormTest from "./components/FormTest"
 import CheckBoxGroupTest from "./components/CheckBoxGroup/CheckBoxGroupTest"
 import RadioGroupTest from "./components/RadioGroup/RadioGroupTest"
 import SelectGroup from "./components/SelectGroup/SelectGroupTest"
+import HocTest from "./HOC/HocTest"
 
 
+//高阶组件的测试
+var TestmodalLog = HocTest(Testmodal);
+var RadioLog = HocTest(RadioGroupTest)
+var SelectLog = HocTest(SelectGroup)
+var CheckBoxLog = HocTest(CheckBoxGroupTest)
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Testmodal />
+      <TestmodalLog />
           
       </header>
           <Grail height={300} children={<FormTest></FormTest>} left={<ul>
@@ -31,9 +37,9 @@ function App() {
                 <p>系统升级公告 2020-01-11 22:11:11</p>
             </div>
           }/>
-          <CheckBoxGroupTest />
-          <RadioGroupTest />
-          <SelectGroup />
+          <CheckBoxLog />
+          <RadioLog />
+          <SelectLog />
     </div>
   );
 }

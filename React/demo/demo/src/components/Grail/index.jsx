@@ -10,8 +10,8 @@ Grail.defaultPoprs = {
 }
 
 Grail.propTypes = {
-    leftWidth:PropTypes.number.isRequired,
-    rightWidth:PropTypes.number.isRequired,
+    leftWidth:PropTypes.number,
+    rightWidth:PropTypes.number,
     minWidth:PropTypes.number,
     height:PropTypes.number,
     children:PropTypes.node,

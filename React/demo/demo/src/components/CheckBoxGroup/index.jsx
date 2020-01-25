@@ -14,7 +14,7 @@ export default class checkBoxGroup extends Component {
 
     static propTypes = {
         datas:types.datas.isRequired,
-        choose:PropTypes.arrayOf(PropTypes.oneOf([PropTypes.number,PropTypes.string])),
+        choose:PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number,PropTypes.string])),
         name:PropTypes.string.isRequired
     }
 

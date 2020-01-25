@@ -10,8 +10,8 @@ Modal.defaultProps = {
 
 Modal.propTypes = {
     children : PropTypes.node,
-    width:PropTypes.oneOf([PropTypes.number,PropTypes.string]),
-    height:PropTypes.oneOf([PropTypes.number,PropTypes.string]),
+    width:PropTypes.oneOfType([PropTypes.number,PropTypes.string]),
+    height:PropTypes.oneOfType([PropTypes.number,PropTypes.string]),
     bg:PropTypes.string,
     onClose : PropTypes.func.isRequired
 }
