@@ -97,5 +97,37 @@ High-Order Component，通常可以利用它实现横切关注点，不关注传
 
 ## ref 元素引用
 
-reference,dom元素的引用，和vue的用法完全一致.
+reference,dom元素的引用，和vue的作用完全一致.
 场景:希望直接使用dom元素/自定义组件中的某个方法
+
+- 作用于html组件，得到dom元素
+- 作用于类组件，得到这个类组建的实例
+- **不能作用于函数组件**
+- ref不再推荐使用字符串赋值，未来版本可能会移除，推荐使用对象或者函数赋值:
+
+==对象方式==:
+使用**React.createRef** 来生成
+    
+    var test = Reaact.createRef();
+
+    <Comp ref={this.test}>
+
+    this.test.current就能拿到这个组件实例
+
+==函数方式==:
+
+    <Comp ref = { (el) => this.test = el }>
+    this.test就能拿到实例了，不需要current
+它的执行时机:
+
+1. componentDidMount,可在这个钩子中使用ref了
+2. 旧的函数被新的函数替代,即componentDidUpdate之前
+       1. 旧的函数被调用时，传递null,
+       2. 新的函数被调用时，传递对象。
+   所以被替代时，它会执行两次,如果不想每次执行两次，可以使用以下方式:
+
+        getRef = el =>{
+            this.test = el 
+        }
+        <Comp ref = {this.getRef()} />
+3. ref所在组件被卸载时，将会执行(componentWillUnmount)
