@@ -131,3 +131,42 @@ reference,dom元素的引用，和vue的作用完全一致.
         }
         <Comp ref = {this.getRef()} />
 3. ref所在组件被卸载时，将会执行(componentWillUnmount)
+
+### ref转发 React.forwardRef
+
+1. 参数，传递的是函数组件,不能是类组件，并且需要第二个参数来得到引用
+2. 返回值，返回的一个新的组
+
+如果目的是得到组件内部的元素的引用，就需要使用ref转发;
+
+    例如有类组件A，A有一个方法生成了一个h1(就是函数生成的),那么想要使用ref拿到h1组件的引用,就可以使用转发
+    function getH1(props,ref){
+        return <h1>
+            <span ></span>
+        </h1>
+    }
+
+    const NewH1 = React.forwardRef(getH1);  //传递函数组件，返回新的组件，使用这个新的。（看上去实际上就是一个高阶组件）
+    <NewH1 />
+    使用newH1后打印这个newH1得到的是个null,使用第二个参数能将ref设置到制定元素身上具体引用到谁身上(这就是转发了)，
+    newH1把ref转发至getH1，然后getH1通过ref设置到具体元素
+
+如果想要给类组件添加:
+
+    class A extends React.Compontent{
+        render(){
+            return (
+                <h1 ref={this.props.ref1}>
+                    <span></span>
+                </h1>
+            )
+        }
+    }
+
+    <A ref1 = {this.props.ref1}>
+    //其实就是当做普通属性传进来
+
+    如果想使用foewardRef:
+        const NewA = React.forwardRef((props,ref)=>{
+            return <A {...props} ref1 = {props.ref}/>
+        })

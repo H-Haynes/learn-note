@@ -1,0 +1,24 @@
+.control-dot{
+    position: absolute;
+    bottom:30px;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    text-align: center;
+    background:rgba(0,0,0,.2);
+    left:50%;
+    transform: translateX(-50%);
+    border-radius:30px;
+
+}
+.control-dot li{
+    width:8px;
+    height:8px;
+    background:#fff;
+    border-radius:50%;
+    margin:0 5px;
+    cursor:pointer;
+}
+.dot-active{
+    background:orange !important
+}

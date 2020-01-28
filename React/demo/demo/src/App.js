@@ -8,7 +8,7 @@ import CheckBoxGroupTest from "./components/CheckBoxGroup/CheckBoxGroupTest"
 import RadioGroupTest from "./components/RadioGroup/RadioGroupTest"
 import SelectGroup from "./components/SelectGroup/SelectGroupTest"
 import HocTest from "./HOC/HocTest"
-
+import BannerTest from "./components/Banner/BannerTest"
 
 //高阶组件的测试
 var TestmodalLog = HocTest(Testmodal);
@@ -19,6 +19,8 @@ var CheckBoxLog = HocTest(CheckBoxGroupTest)
 function App() {
   return (
     <div className="App">
+      <BannerTest /> 
+
       <header className="App-header">
       <TestmodalLog />
           

@@ -1,0 +1,30 @@
+.control-button{
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+    display: none;
+}
+.control-button span{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    text-align: center;
+    line-height:40px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+}
+.control-button span:hover{
+    background:rgba(0,0,0,.7)
+}
+.banner-container:hover .control-button{
+    display: block;
+}
+.left-btn{
+    float:left;
+}
+.right-btn{
+    float:right;
+}
