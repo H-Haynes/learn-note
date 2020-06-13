@@ -170,3 +170,202 @@ reference,dom元素的引用，和vue的作用完全一致.
         const NewA = React.forwardRef((props,ref)=>{
             return <A {...props} ref1 = {props.ref}/>
         })
+
+## Context
+
+执行环境
+1. 某个组件创建了上下文后，其所有后代组件都可以访问这个上下文
+2. 如果某个组件依赖于上下文，则该组件不再纯粹（纯粹是指数据仅来自props）
+3. 一般情况用于第三方组件（通用组件）
+
+### 旧版
+
+**创建上下文** 
+只有类组件可以创建上下文
+1. 给类组件书写静态属性==childContextTypes==,使用该属性对上下文中的数据进行类型约束（必写）
+
+        static childContextTypes = {
+            a:PropTypes.number,
+            b:PropTypes.string
+        }
+
+2. 添加实例方法getChildContext.该方法返回上下文中的数据(设置上下文的数据),数据类型必须满足约束,该方法会在每次render之后运行
+
+        getChildContext(){
+            return {
+                a:123,
+                b:"fff"
+            }
+        }
+
+**使用**
+如果要使用上下文中的数据，组件必须要有一个静态属性contextTypes,该属性描述需要使用个上下文中数据的类型(约束),可以在创建上下文约束是使用变量，这里使用属性来赋值
+
+    static contextTypes = {
+        a:PropTypes.number
+    }
+可以通过构造函数的第二个参数获得上下文,(实际并不需要我们执行构造函数的，它是自动执行)
+
+    constructor(props,context){
+        super(props,context);
+        console.log(this.context)
+    }
+
+*函数组件中通过第二个参数获取上下文数据*
+
+    funA.contextTypes = {
+        a:Proptypes.number
+    }
+    function FunA(props,context){
+
+    }
+
+**上下文中的数据变化**
+上下文中的数据不可以直接变化，最终都是通过属性状态变化来改变
+在上下文中加入一个方法，可以直接更改数据的方法,子组件就能改编数据了(和事件一样)
+自己创建了上下文，再从上下文取数据，拿到的是最近=祖先的上下文
+
+### 新版
+
+旧版的API存在严重的效率问题和漏洞
+新版的上下文是一个独立于组建的对象，和组件没有直接的关系,该对象通过**React.createContext**创建
+上下文包含了两个属性:
+
+1. Provider属性:本质上是一个组件,上下文生产者，该组件会创建一个上下文,后面想要创建上下文，则使用该组件将所有后代组件包含,通过该组件的value属性值来改变默认值.
+ **该组件最好不要复用，仅在一个组件使用**,如果其他组件要使用，应该将上下文*提升至共同祖先级组件中*
+
+        生产者:
+        const ctx = React.createContext({       //上下文默认值
+            a:123,
+            b:"fff"
+        })
+        export default class NewContext extends Component {
+            state = {
+                a:456
+            }
+            static contextTypes = ctx;  //关联
+            render() {
+                const Provider = ctx.Provider;
+
+                return (
+                    <ctx.Provider value={()=>{
+                        a:this.state.a
+                    }}>
+                        <div>
+                            
+                        </div>
+                    </ctx.Provider>
+                )
+            }
+        }
+
+        使用者:(方式和旧版一致,但是数据个是有了变化)
+
+**使用上下文中的数据**
+必须拥有静态属性contextType,该属性必须赋值一个上下文（即关联上下文）
+可在上下文创建一个方法用于改变值，后代组件调用这个方法就能改变值了
+this.context.changeValue().....
+
+在类组件中直接使用this.contet获取上下文数据
+在函数组件中需要使用consumer来获取上下文数据
+
+2. Consumer属性
+
+消费者，也是一个组件,在函数组件中用来获取上下文,它的子节点是一个函数(它的props.children是一个函数)
+类组件也可使用该方式
+
+    <ctx.Consumer>
+        {value =>{
+            <>
+                a的值:{value.a}
+                b的值:{value.b}
+            </>
+        }}
+    </ctx.Consumer>
+如果上下文提供者中的value属性发上变化，会导致其所有后代组件全部重新渲染，无论该后代元素是否有优化(ShouldComponentUpdate钩子函数),强制更新
+
+
+## 插槽 Portals
+
+Protals插槽和Vue的插槽不是同一个东西，Vue的插槽和React的children更接近
+Protals是在代码层级不变，显示上是将React元素插入到另一个地方
+
+比如:
+
+    在代码层级上:
+        <A>
+            <B>
+                <C></C>
+            </B>
+        </A>
+        <div class="truth"></div>
+    想要将C组件渲染到truth元素里面:
+        ReactDOM.createProtal(<C></C>,document.querySelector(".truth"));
+ReactDOM.creactProtal接受两个参数:
+
+1. 要插入的React元素
+2. 插入的真实DOM
+注意事件冒泡==依然遵循虚拟DOM的顺序==，所以会导致看上去C组件在truth里面，但是A,B组件也能接收到事件的触发
+
+## 错误边界
+
+在React中，一个组件在render期间发生错误，会导致整个组件树被卸载
+错误边界是一个组件，该组件会捕获到**渲染期间子组件**发生的错误(类似try...catch)，并有能力阻止这个错误向上传播
+捕获错误的方式:
+
+1. 使用生命周期捕获错误 getDerivedStateFromError
+   1. 该函数为静态函数，不可使用this
+   2. 运行时间为渲染子组件过程中发生错误后,在更新页面之前
+   3. 注意:只有子组件发生错误才会运行,自身发生错误不会执行
+   4. 该函数返回一个对象，React会将该对象的属性覆盖掉当前组件的state
+   5. 参数：错误对象
+   6. 常用于改变状态
+2. 使用生命周期函数 componentDidCatch 捕获错误
+   1. 该生命周期为一个实例方法
+   2. 运行时间为：渲染子组件的过程中发生错误，页面更新**之后**，运行时组件树已经卸载，执行后无错误再重新渲染组件树，所以不会在改函数中处理状态！
+   3. 参数为:错误对象、错误摘要信息
+   4. 该函数通常用于记录错误消息
+
+    export default class ErrorBound extends PureComponent {
+        static getDerivedStateFromError(){
+            return {
+                hasError : true
+            }
+
+        }
+        render(){
+            if(this.hasError){
+                    return <p>该组件发生错误</p>
+            }
+            else return (
+                
+                <div>
+
+                </div>
+            )
+        }
+    }
+
+使用,将错误边界套在会出错的组件外部
+
+    <ErrorBound>
+        <ErrorComponent></ErrorComponent>
+    </ErroeBound>
+**某些错误在错误边界中无法捕获**:
+
+1. 自身组件的错误
+2. 异步错误
+3. 事件中的错误
+
+## React中的事件
+
+React内置的DOM组件中的事件:
+1. 给dcoument注册事件
+2. 几乎所有的元素的事件处理，均在document的事件中处理的
+3. 在document的时间处理，React均会根据虚拟dom的完成事件函数的调用
+4. 如果在真实dom注册了事件并阻止了冒泡，react事件将不会触发
+5. React事件的参数非真实DOM事件参数，是React合成的一个对象，类似于真实Dom参数
+6. 如果给真实dom注册了事件，将会先于React事件运行
+7. react事件中阻止事件冒泡，无法阻止真实dom事件
+8. 可通过native.stopImmediaPropagation阻止document上的剩余事件
+9. 在事件处理程序中，不要异步的使用事件对象( 事件对象是被重用的)

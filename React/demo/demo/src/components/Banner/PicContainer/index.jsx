@@ -35,8 +35,6 @@ export default class PicContainer extends Component {
 
     //切换至指定图片，有动画
     switchTo = index => {
-        console.log("接受index :"+index)
-
         const self = this;
         if(index<0){
             index = 0

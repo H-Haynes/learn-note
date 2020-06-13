@@ -1,0 +1,15 @@
+button{
+    width:40px;
+    height:80px;
+    font-size:24px;
+}
+.visiable{
+    width:120px;
+    font-size:16px;
+    height:30px;
+    margin-top:20px;
+}
+span{
+    font-size:18px;
+    margin:0 20px;
+}

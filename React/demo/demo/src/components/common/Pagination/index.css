@@ -1,0 +1,23 @@
+.item{
+    padding:5px 8px;
+    border:1px solid #e7e7eb;
+    border-radius:3px;
+    cursor:pointer;
+    font-size:14px;
+    margin:0;
+    color:#409eff;
+    margin-right: 15px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.disabled{
+    color:#aaa;
+    cursor:not-allowed;
+}
+.current-page{
+    border:none;
+    color:red;
+}

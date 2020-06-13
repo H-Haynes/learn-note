@@ -59,7 +59,6 @@ export default class Banner extends Component {
         this.setState({
             switchIndex:index
         },()=>{
-            console.log(index)
             this.switchTo(index)
         })
     }
