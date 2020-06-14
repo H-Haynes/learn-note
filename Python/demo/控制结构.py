@@ -54,3 +54,20 @@ print(type(zip(names,ages)))
 for index,age in zip(names,ages):
     print("%s%d"%(name,age))
 
+
+# 蒙特卡罗
+    
+import time
+DARTS = 10000000
+hits = 0.0
+start=time.time()
+for i in range(1, DARTS+1):
+    x,y = random(),random()
+    dist = pow(x**2+y**2,0.5)
+    if dist<=1.0:
+        hits = hits+1
+
+pi = 4*(hits/DARTS)
+end = time.time()
+print("PI是{}".format(pi))
+print('运行时间为:%.5f'%(end-start))
