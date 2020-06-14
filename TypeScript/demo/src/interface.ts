@@ -32,3 +32,21 @@ function sum (numbers:number[],callback:Condition):number{
 console.log(sum([1,2,3,4,5,6,7,8,9], n => n%2==0),'偶数位之和');
 console.log(sum([1,44,63,67,78,99,107,128,149], n => n*5%10==0),'5倍后尾数为0的数之和');
 
+interface  A{
+    T1:number
+}
+interface B extends A{
+    T2:string
+}
+let ext:B = {
+    T1:24,
+    T2:"继承"
+}
+interface C extends A,B{    //多重继承
+    T3:Boolean
+}
+let ext2:C = {
+    T1:66,
+    T2:'多重继承',
+    T3:true
+}
