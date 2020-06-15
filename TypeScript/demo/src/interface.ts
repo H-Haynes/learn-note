@@ -50,3 +50,12 @@ let ext2:C = {
     T2:'多重继承',
     T3:true
 }
+
+interface listen{
+    lesson:number,
+   readonly name:string
+}
+let learn:listen={
+    lesson:1,
+    name:"ts"
+}
