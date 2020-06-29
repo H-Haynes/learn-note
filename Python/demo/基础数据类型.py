@@ -64,3 +64,8 @@ for p in "你の名字":
     
 print("欢迎来到王者荣耀".ljust(20))
 print("欢迎来到王者荣耀".rjust(20))
+
+# format
+"{3}{1}{2}{0}".format("this","is","a","pen");
+# 结果为: pen is a this
+ 
