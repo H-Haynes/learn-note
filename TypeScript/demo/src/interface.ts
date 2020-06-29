@@ -59,3 +59,11 @@ let learn:listen={
     lesson:1,
     name:"ts"
 }
+
+var a = 2;
+for (var i = 0; i < 23; i++) {
+
+    a = a++;
+    console.log(a,'后')
+}
+console.log(a)

@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@types/node@^14.0.14":
+  version "14.0.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
+  integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
+
+console-color-mr@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/console-color-mr/-/console-color-mr-2.0.1.tgz#bed789d999052d14dc3928e5f1a0b3ae3933c756"
+  integrity sha512-pV0KDTBdK13vSFywnspL2S2Ny8sX1fGDa4ijL92IL7Z605OttM/cc3kUzhcfKHE6KhmePMpUhlwxytGq/TPOAg==
+
 typescript@^3.9.2:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
