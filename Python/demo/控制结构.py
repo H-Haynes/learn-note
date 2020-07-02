@@ -5,7 +5,7 @@ Created on Sun Jun 14 19:31:59 2020
 
 @author: hehong
 """
-form random import *
+from random import *
 import math
 import calendar
 roundNum = randint(7,22)
@@ -41,6 +41,18 @@ if check_year:
 else:
     print('%s年不是闰年'%(year))
 
+# 自己实现判断闰年
+
+if not year%100:
+    if not year%400:
+        print(year,'是闰年')
+    else:
+        print(year,'不是闰年')
+elif not year%4:
+    print(year,"是闰年")
+else:
+    print(year,'不是闰年')
+
 
 # 枚举
 names = ["所念皆星河","星河不可及"]
@@ -58,7 +70,7 @@ for index,age in zip(names,ages):
 # 蒙特卡罗
     
 import time
-DARTS = 10000000
+DARTS = 10000
 hits = 0.0
 start=time.time()
 for i in range(1, DARTS+1):
@@ -71,3 +83,26 @@ pi = 4*(hits/DARTS)
 end = time.time()
 print("PI是{}".format(pi))
 print('运行时间为:%.5f'%(end-start))
+
+
+# 异常
+
+# 函数
+def sum(a,b):
+    print(a+b)
+sum(23,89)
+
+
+def sum1(a,*b):
+    temp = a
+    for x in list(b):
+        temp+=x
+    print(temp)
+    
+sum1(4,5,6,7,8,9)
+
+
+
+
+
+
