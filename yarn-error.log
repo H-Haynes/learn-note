@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /Users/redRiver/Desktop/.npm-global/bin/yarn add colors
+  /usr/local/bin/node /Users/redRiver/Desktop/.npm-global/bin/yarn add relect-metadata
 
 PATH: 
-  /usr/local/flutter/bin:/usr/local/opt/php/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/Applications/VMware Fusion.app/Contents/Public:/Volumes/Transcend/opt/anaconda3/bin:/Volumes/Transcend/opt/anaconda3/condabin:/usr/local/flutter/bin:/usr/local/opt/php/bin:/Users/redRiver/Desktop/.npm-global/bin:/usr/local/mongodb/bin:/usr/local/redis-5.0.5/src:/usr/local/Homebrew/bin:/Users/redRiver/Desktop/.npm-global/bin:/usr/local/mongodb/bin:/usr/local/redis-5.0.5/src:/usr/local/Homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/Applications/VMware Fusion.app/Contents/Public:/Volumes/Transcend/opt/anaconda3/bin:/Volumes/Transcend/opt/anaconda3/condabin:/usr/local/flutter/bin:/usr/local/opt/php/bin:/Users/redRiver/Desktop/.npm-global/bin:/usr/local/mongodb/bin:/usr/local/redis-5.0.5/src:/usr/local/Homebrew/bin
+  /Volumes/Transcend/opt/anaconda3/bin:/Volumes/Transcend/opt/anaconda3/condabin:/usr/local/flutter/bin:/usr/local/opt/php/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/redRiver/Desktop/.npm-global/bin:/usr/local/mongodb/bin:/usr/local/redis-5.0.5/src:/usr/local/Homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/Applications/VMware Fusion.app/Contents/Public
 
 Yarn version: 
   1.19.1
@@ -14,12 +14,17 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/colors: ETIMEDOUT
-      at Timeout._onTimeout (/Users/redRiver/Desktop/.npm-global/lib/node_modules/yarn/lib/cli.js:141224:19)
-      at ontimeout (timers.js:436:11)
-      at tryOnTimeout (timers.js:300:5)
-      at listOnTimeout (timers.js:263:5)
-      at Timer.processTimers (timers.js:223:10)
+  Error: https://registry.yarnpkg.com/relect-metadata: Not found
+      at Request.params.callback [as _callback] (/Users/redRiver/Desktop/.npm-global/lib/node_modules/yarn/lib/cli.js:66926:18)
+      at Request.self.callback (/Users/redRiver/Desktop/.npm-global/lib/node_modules/yarn/lib/cli.js:140564:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/Users/redRiver/Desktop/.npm-global/lib/node_modules/yarn/lib/cli.js:141536:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/Users/redRiver/Desktop/.npm-global/lib/node_modules/yarn/lib/cli.js:141458:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
