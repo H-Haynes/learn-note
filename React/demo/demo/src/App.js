@@ -12,8 +12,11 @@ import BannerTest from "./components/Banner/BannerTest"
 import ContextFormTest from "./components/ContextForm/Test"
 import StateHook from "./components/StateHook"
 import SongListTest from "./components/SongList/SongListTest"
-
-
+import {BrowserRouter as Router,Link,Route,Switch} from "react-router-dom"
+import Home from "./pages/home"
+import Login from "./pages/login.js"
+import person from "./pages/person"
+import ProtectedRoute from "./components/ProtectedRoute"
 //高阶组件的测试
 var TestmodalLog = HocTest(Testmodal);
 var RadioLog = HocTest(RadioGroupTest)
@@ -23,37 +26,47 @@ var CheckBoxLog = HocTest(CheckBoxGroupTest)
 function App() {
 
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <BannerTest /> 
       {/* <StateHook /> */}
       <SongListTest />
       <header className="App-header">
       <TestmodalLog />
-          
+        
       </header>
           <Grail height={300} children={<FormTest></FormTest>} 
           left={<ul>
-            <li>首页</li>
-            <li>菜单</li>
-            <li>购买</li>
+              
+            <li><Link to="/">首页</Link></li>
+            <li><Link to="/person">个人中心</Link></li>
+            <li><Link to="/buy">购买</Link></li>
             <li>开发文档</li>
             <li>技术支持</li>
             <li>联系我们</li>
             </ul>} 
           right={
             <div>
-              <div>
+              {/* <div>
                   <h5>公告</h5>
                   <p>2020年春节放假通知    2020-01-19 22:11:00</p>
                   <p>系统升级公告 2020-01-11 22:11:11</p>
               </div>
-              <ContextFormTest />
+              <ContextFormTest /> */}
+              <Switch>
+                <Route path="/login" component={Login}></Route>
+                <Route path="/home" component={Home}></Route>
+                <ProtectedRoute path="/person" component={person}></ProtectedRoute>
+                {/* <Route path="/person" component={person}></Route> */}
+
+              </Switch>
             </div>
           }/>
           <CheckBoxLog />
           <RadioLog />
           <SelectLog />
     </div>
+    </Router>
   );
 }
 
