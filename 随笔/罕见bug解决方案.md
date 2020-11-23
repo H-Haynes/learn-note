@@ -17,3 +17,11 @@
 1.在服务端使用```mysql -u root -p```命令登录数据库
 2.使用命令```grant all privileges on *.* to '用户名'@'%' identified by '登录密码' with grant option;```设置远程登录用户;
 3.使用命令```flush privileges;```刷新权限，然后就能够连接到数据库了
+
+### 
+
+不使用第三方工具挂载ntfs硬盘
+
+    mount
+    sudo umount   /dev/disk2s1
+    sudo mount_ntfs -o rw,nobrowse /dev/disk2s1 ~/Desktop/mnt

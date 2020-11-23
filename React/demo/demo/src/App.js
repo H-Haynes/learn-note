@@ -17,6 +17,7 @@ import Home from "./pages/home"
 import Login from "./pages/login.js"
 import person from "./pages/person"
 import ProtectedRoute from "./components/ProtectedRoute"
+import RouterGuard from "./components/RouterGuard"
 //高阶组件的测试
 var TestmodalLog = HocTest(Testmodal);
 var RadioLog = HocTest(RadioGroupTest)
@@ -26,7 +27,10 @@ var CheckBoxLog = HocTest(CheckBoxGroupTest)
 function App() {
 
   return (
-    <Router>
+    <RouteGuard onBeforeChange={(prev,cur,action,commit)=>{
+      console.log(  `页面想要跳转`)
+      commit(true)
+    }}>
       <div className="App">
       <BannerTest /> 
       {/* <StateHook /> */}
@@ -65,8 +69,10 @@ function App() {
           <CheckBoxLog />
           <RadioLog />
           <SelectLog />
+
+
     </div>
-    </Router>
+    <RouteGuard>
   );
 }
 

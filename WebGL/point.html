@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘制点</title>
+</head>
+
+<body>
+    <canvas width="500" height="500" id="oCanvas"></canvas>
+    <script type="notJs" id="vertex">
+        //顶点着色器代码，设置type不为javascript的任意值
+        precision mediump float;    //精度限定 highp mediumo lowp高中低三种精度数/据精度限定
+        attribute vec2 a_position;
+        attribute vec4 a_color;
+        uniform vec2 screenSize;
+        varying vec4 v_color;
+        void main(){
+            float x = a_position.x * 2.0 / screenSize.x - 1.0;
+            float y = 1.0 - a_position.y * 2.0 / screenSize.y;
+            gl_Position = vec4(x,y,0,1);    //顶点位置
+            gl_PointSize = 10.0;
+            v_color = a_color;  //颜色赋值
+        }
+    </script>
+    <script type="fragment" id="fragment">
+        //片元着色器代码 
+        precision mediump float;    //精度限定 highp mediumo lowp高中低三种精度数/据精度限定
+        varying vec4 v_color;
+        void main(){
+            //gl_FragColor = vec4(0,0,0,1);
+            gl_FragColor = v_color;
+        }
+    </script>
+</body>
+<script>
+    var oCanvas = document.getElementById('oCanvas');
+    var gl = oCanvas.getContext('webgl');
+    if (!gl) {
+        document.write('请使用现代浏览器');
+    }
+    //获取着色器代码文本
+    var vertex = document.getElementById('vertex').innerText;
+    var fragment = document.getElementById('fragment').innerText;
+    var vertexShader = createShader(gl, gl.VERTEX_SHADER, vertex);
+    var fragShader = createShader(gl, gl.FRAGMENT_SHADER, fragment);
+
+    //创建程序，链接着色器
+    var program = createProgram(gl, vertexShader, fragShader);
+
+    gl.useProgram(program);
+
+    
+    gl.clearColor(0.2, 0.3, 0.5, 1); //清空画布
+    gl.clear(gl.COLOR_BUFFER_BIT); //清空颜色缓冲区
+    var a_position = gl.getAttribLocation(program, "a_position"); //参数：程序，程序内哪个变量，根据不同的变量类型调用不同的方法
+    var a_color = gl.getAttribLocation(program, 'a_color');
+    var screenSize = gl.getUniformLocation(program, 'screenSize');
+    gl.uniform2f(screenSize, oCanvas.width, oCanvas.height);
+
+    function bindEvent() {
+        var points = [];
+        oCanvas.addEventListener('mousedown', function (e) {
+            //绘制
+            gl.clearColor(0.2, 0.3, 0.5, 1); //清空画布
+            gl.clear(gl.COLOR_BUFFER_BIT); //清空颜色缓冲区
+            var x = e.offsetX;
+            var y = e.offsetY;
+            var r = Math.random();
+            var g = Math.random();
+            var b = Math.random();
+            var a = Math.random();
+            //向attribute类型变量赋值
+            points.push({
+                x,
+                y,
+                color:{r,g,b,a}
+            })
+            points.forEach(ele => {
+                
+                
+                gl.vertexAttrib2f(a_position, ele.x, ele.y); //2指参数个数,f指float类型
+                gl.vertexAttrib4f(a_color, ele.color.r,  ele.color.g,  ele.color.b, ele.color.a); //着色器的颜色值为0-1,不是0-255
+                gl.drawArrays(gl.POINTS, 0, 1);
+
+            })
+
+        }, false)
+    }
+    bindEvent();
+
+    // gl.drawArrays(gl.POINTS, 0, 2);
+    // gl.drawArrays(gl.LINES,0,10)
+    //mode  绘制方式，gl.POINTS,gl.LINES,gl.LINE_STRIP,gl.LINE_LOOP,gl.TRIANGLES,gl.TRIANGLE_STRIP,gl.TRIANGLE_FAN
+    //first 指定从哪个顶点开始绘制
+    //count 指定绘制需要用到多杀个顶点，整数
+    //无返回值
+
+    /**
+     *@param gl webgl对象
+     *@param type 着色器类型,
+     *@param source 图源.字符串类型
+     * 创建着色器
+     */
+
+    function createShader(gl, type, source) {
+        //创建着色器
+        var shader = gl.createShader(type);
+        //添加资源
+        gl.shaderSource(shader, source);
+        //编译着色器代码
+        gl.compileShader(shader);
+        var status = gl.getShaderParameter(shader, gl.COMPILE_STATUS); //第二个值是状态
+        if (status) {
+            return shader
+        } else {
+            //编译失败:
+            console.log(gl.getShaderInfoLog(shader)); //查看编译信息
+        }
+    }
+
+    function createProgram(gl, vertexShader, fragmentShader) {
+        var program = gl.createProgram();
+        //绑定两个着色器,参数：程序，顶点着色器，片元着色器
+        gl.attachShader(program, vertexShader);
+        gl.attachShader(program, fragmentShader);
+        //链接
+        gl.linkProgram(program);
+        var status = gl.getProgramParameter(program, gl.LINK_STATUS);
+        if (status) {
+            return program
+        } else {
+            console.log(gl.getProgramInfoLog(program))
+        }
+        // return program
+    }
+
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+
+</html>

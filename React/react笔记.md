@@ -20,6 +20,34 @@ create-react-app 项目名
 将内容以jsx使用属性传入，然后在组件中将props.属性名显示到页面
 在自定义组件传递元素内容，则react会将元素内容作为children属性传递过去,所以可以直接使用props.children
 
+## 组件状态
+
+在类组件中，在constructor初始化this.state来初始化状态，改变组件状态===需要使用this.setState来改变===，如果直接改编数据，react可能无法检测到数据改变，不进行渲染
+```
+constructor(props){
+    super(props)
+    this.state = {
+        time:60
+    }
+}
+setInterval(()=>{
+    this.setState({
+        time:this.state.time-1
+    })
+})
+```
+
+还有一种非标准初始化方式，直接在类中书写state,会在constrcutor调用后执行:
+
+```
+    export default class Cloak extends Compontents{
+        state = {
+            time : 60
+        }
+    }
+
+```
+
 ## 表单元素
 
 * 受控组件 ：组件的使用者有权利完全控制该组件的行为和内容,通常情况下，受控组件旺旺没有自身的撞他，其内容完全受到属性的控制(函数组件)
