@@ -16,11 +16,12 @@
         attribute vec4 a_color;
         uniform vec2 screenSize;
         varying vec4 v_color;
+        attribute float pointSize;
         void main(){
             float x = a_position.x * 2.0 / screenSize.x - 1.0;
             float y = 1.0 - a_position.y * 2.0 / screenSize.y;
             gl_Position = vec4(x,y,0,1);    //顶点位置
-            gl_PointSize = 10.0;
+            gl_PointSize = pointSize;
             v_color = a_color;  //颜色赋值
         }
     </script>
@@ -57,9 +58,10 @@
     var a_position = gl.getAttribLocation(program, "a_position"); //参数：程序，程序内哪个变量，根据不同的变量类型调用不同的方法
     var a_color = gl.getAttribLocation(program, 'a_color');
     var screenSize = gl.getUniformLocation(program, 'screenSize');
+    var pointSize = gl.getAttribLocation(program,'pointSize');
     gl.uniform2f(screenSize, oCanvas.width, oCanvas.height);
 
-    gl.vertexAttrib4f(a_color,1,1,0,0);
+    gl.vertexAttrib4f(a_color,1,1,0,1);
 
     //创建缓冲区
     var positionBuffer = gl.createBuffer();
@@ -67,27 +69,75 @@
     gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
     //传入数据
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([
-        100,100,
-        100,150,
-        150,150,
-        // 200,200,
-        // 200,250,
-        // 250,250
-    ]),gl.STATIC_DRAW);    //1.目标缓冲区，即array_buffer/element_array_buffer,
-                        //2.数据(类型化数组,强类型),
-                        //3.程序如何使用这些数据:
-                        //     static_draw:仅向缓冲区写入一次，但需要绘制多次，所写图像去绘制
-                        //     stream_draw:仅向缓冲区写入一次，单后绘制若干次,不断绘制
-                        //     dynamic_draw:多次写入，多次绘制
-    //将缓冲区对象分配给attribute变量
-    gl.vertexAttribPointer();    //1.变量名
-                                //2.分配顶点个数
-                                //3.指定数据格式:
-                                // UNSIGNED_BYTE无符号字节 SHORT短整形
-                                // UNSIGNed_SHORT无符号短整形 int整形
-                                //UNSIGNED_INT无覆盖整形 FLOAT浮点型
-                                //normalize 
+        // 100.0,100.0,10.0,
+        // 100.0,150.0,20.0,
+        // 150.0,150.0,30.0
+        100.0,100.0,10.0,0.23,0.34,0.66,1.0,
+        100.0,150.0,20.0,0.23,0.34,0.66,1.0,
+        150.0,150.0,30.0,0.23,0.34,0.66,1.0,
+    ]),gl.STATIC_DRAW);    
+    //1.目标缓冲区，即array_buffer/element_array_buffer,
+    //2.数据(类型化数组,强类型),
+    //3.程序如何使用这些数据:
+    //     static_draw:仅向缓冲区写入一次，但需要绘制多次，所写图像去绘制
+    //     stream_draw:仅向缓冲区写入一次，单后绘制若干次,不断绘制
+    //     dynamic_draw:多次写入，多次绘制
 
+    //将缓冲区对象分配给attribute变量
+    gl.vertexAttribPointer(a_position,2,gl.FLOAT,false,4*7,0);   
+    gl.vertexAttribPointer(pointSize,1,gl.FLOAT,false,4*7,4*2);
+    gl.vertexAttribPointer(a_color,4,gl.FLOAT,false,4*7,4*3);    
+        //1.变量名,存储位置
+        //2.分配顶点个数
+        //3.指定数据格式:
+        //  - UNSIGNED_BYTE无符号字节 
+        //  - SHORT短整形
+        //  - UNSIGNed_SHORT 无符号短整形 
+        //  - int整形
+        //  - UNSIGNED_INT无符合整形 
+        //  - FLOAT浮点型
+        //   
+        //4. normalize ,数据是否归一化，如果数据超过0-1之间，且在数据类型之类，则会转为对应的值，适用于非浮点数据
+        //5.相邻两个顶点之间的字节数(float32一个元素是4字节)
+        //6.指定缓存区的偏移量
+    //激活变量
+    gl.enableVertexAttribArray(a_position);
+    gl.enableVertexAttribArray(pointSize);
+    gl.enableVertexAttribArray(a_color);
+    //绘制
+    gl.drawArrays(gl.TRIANGLES,0,3)
+    // gl.drawArrays(gl.POINTES,0,3)
+    bindEvent()
+    function bindEvent(){
+        var points = [];
+        oCanvas.addEventListener('mousedown', function (e) {
+            gl.clearColor(0.2, 0.3, 0.5, 1); //清空画布
+            gl.clear(gl.COLOR_BUFFER_BIT); //清空颜色缓冲区
+            var x = e.offsetX;
+            var y = e.offsetY;
+            var size = (Math.random()*100).toFixed(2);
+            var r = Math.random();
+            var g = Math.random();
+            var b = Math.random();
+            var a = Math.random();
+            points.push(x,y,size,r,g,b,a);
+            if(points.length%7==0){
+                gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(points),gl.STATIC_DRAW); 
+                //将缓冲区对象分配给attribute变量
+                gl.vertexAttribPointer(a_position,2,gl.FLOAT,false,4*7,0);   
+                gl.vertexAttribPointer(pointSize,1,gl.FLOAT,false,4*7,4*2); 
+                gl.vertexAttribPointer(a_color,4,gl.FLOAT,false,4*7,4*3);    
+                gl.enableVertexAttribArray(a_position);
+                gl.enableVertexAttribArray(pointSize);
+                gl.enableVertexAttribArray(a_color);
+                // gl.drawArrays(gl.TRIANGLES, 0,points.length/7);
+                // gl.drawArrays(gl.LINES, 0,points.length/7);
+                // gl.drawArrays(gl.LINE_STRIP, 0,points.length/7);
+                gl.drawArrays(gl.LINE_LOOP, 0,points.length/7);
+
+            }
+        },false)
+    }
 
     /**
      *@param gl webgl对象
