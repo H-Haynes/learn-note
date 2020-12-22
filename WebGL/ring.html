@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./webGL.js"></script>
+
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    
+</body>
+<script>
+    var vertex = `
+        precision mediump float;
+        attribute vec2 a_position;
+        attribute vec4 a_color;
+        varying vec4 v_color;
+        uniform vec2 screenSize;
+        void main(){
+            float x = a_position.x * 2.0 / screenSize.x - 1.0;
+            float y = 1.0 - a_position.y * 2.0 /screenSize.y;
+            gl_Position = vec4(x,y,0,1);
+            v_color = a_color;
+        }
+    `;
+    var fragment = `
+        precision mediump float;
+        varying vec4 v_color;
+        void main(){
+            gl_FragColor = v_color;
+        }
+    `;
+
+    var oCanvas = document.getElementById('canvas');
+    var gl = oCanvas.getContext("webgl");
+    var myGl = new GlGenerator(gl,vertex,fragment);
+
+    myGl.init(set);
+
+    function set(gl,program){
+        var a_position = gl.getAttribLocation(program,'a_position');
+        var a_color = gl.getAttribLocation(program,'a_color');
+        var screenSize = gl.getUniformLocation(program,'screenSize');
+
+        gl.clearColor(0.2,0.4,0.5,1);
+        // gl.clear(gl.COLOR_BUTTER_BIT);
+        gl.uniform2f(screenSize,oCanvas.width,oCanvas.height);
+        gl.vertexAttrib4f(a_color,1,1,0,1);
+        var positionBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+        
+        
+        gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(GlGenerator.circlePoints(200,200,100,90,'#f56c6c').concat(GlGenerator.circlePoints(200,200,50,90,'#FFFFFF'))),gl.STATIC_DRAW);
+
+        gl.vertexAttribPointer(a_position,2,gl.FLOAT,false,6*4,0);
+        gl.vertexAttribPointer(a_color,4,gl.FLOAT,false,6*4,2*4);
+        gl.enableVertexAttribArray(a_position);
+        gl.enableVertexAttribArray(a_color);
+
+        gl.drawArrays(gl.TRIANGLE_FAN,0,184)
+
+    }
+</script>
+</html>

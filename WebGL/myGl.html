@@ -204,7 +204,7 @@
     var gl = oCanvas.getContext('webgl');
     var vertex = document.getElementById('top').innerText;
     var fragment = document.getElementById('fragment').innerText;
-
+    console.log(vertex)
     var myGl = new GlGenerator(gl,vertex,fragment);
     myGl.init(set)
     function set(gl,program){
