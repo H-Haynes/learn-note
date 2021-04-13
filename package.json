@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@types/node": "^14.0.14",
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "console-color-mr": "^2.0.1",
     "create-vite-app": "^1.21.0",
