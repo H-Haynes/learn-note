@@ -4,7 +4,9 @@
     "class-transformer": "^0.2.3",
     "class-validator": "^0.12.2",
     "console-color-mr": "^2.0.1",
+    "create-vite-app": "^1.21.0",
     "reflect-metadata": "^0.1.13",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.2",
+    "vite": "^2.1.5"
   }
 }
