@@ -100,5 +100,5 @@ vue3
                 }
         }
 
-如此，相关的代码聚集在一块，而且还能够提。s相比optionAPI,还需将a放置于data、function放置于mthods，或更多操作放置于不同的option,代码过于分散
+如此，相关的代码聚集在一块，而且还能够提取，甚至封装模块。相比optionAPI,还需将a放置于data、function放置于mthods，或更多操作放置于不同的option,代码过于分散
 
