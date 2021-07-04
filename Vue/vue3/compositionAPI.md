@@ -28,18 +28,16 @@
 | mounted             | mounted             | onMounted                   |
 | beforeUpdate        | beforeUpdate        | onBeforeUpdate              |
 | updated             | updated             | onUpdated                   |
-| beforeDestory       | **beforeUnmount**   | onBeforeUnmount             |
-| destoryed           | **unmounted**       | onUnmounted                 |
+| beforeDestroy       | **beforeUnmount**   | onBeforeUnmount             |
+| destroyed           | **unmounted**       | onUnmounted                 |
 | errorCaptured       | errorCaptured       | onErrorCaptured             |
-| -                   | ==renderTracked==   | onRenderTrancked            |
+| -                   | ==renderTracked==   | onRenderTracked            |
 | -                   | ==renderTriggered== | onRenderTriggered           |
 
 改变：
 
-  1. **组件的销毁(destory)生命周期变更为卸载（unmount）**
-  2.删除了created和beforeCreated
-
-vue3的数据响应式由开发者定义，不再需要这两个
+  1. **组件的销毁(destroy)生命周期变更为卸载（unmount）**
+  2. 删除了created和beforeCreated,vue3的数据响应式由开发者定义，不再需要这两个
 
 新增:
 

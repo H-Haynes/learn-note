@@ -1,20 +1,20 @@
 {
-  "name": "demo",
+  "name": "demo1",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
   "dependencies": {
-    "@types/vue": "^2.0.0",
-    "axios": "^0.21.1",
-    "element-plus": "^1.0.2-beta.39",
-    "vue": "^3.0.4"
+    "element-plus": "^1.0.2-beta.40",
+    "vue": "^3.0.4",
+    "vue-router": "4.0.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "@vue/compiler-sfc": "^3.0.4",
     "autoprefixer": "^9.8.6",
+    "less": "^4.1.1",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0",
     "vite": "^1.0.0-rc.13"
