@@ -2,17 +2,15 @@
   "name": "demo",
   "version": "1.0.0",
   "description": "",
-  "main": "9.js",
+  "main": "index.js",
   "scripts": {
+    "dev":"egg-bin dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5",
-    "sqlite": "^4.0.23"
-  },
-  "type":"module"
+    "egg": "^2.30.0",
+    "egg-bin": "^4.16.4"
+  }
 }
