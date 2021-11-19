@@ -55,7 +55,6 @@
 import "reflect-metadata"
 
 const key=Symbol.for("descriptor")
-
 export function printObj(obj:any){
     const cons = Object.getPrototypeOf(obj);
     if(Reflect.hasMetadata(key,cons)){
