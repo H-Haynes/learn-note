@@ -32,7 +32,7 @@ loader是将源代码字符串source code经过一定规则，转换为新的sou
 
                 }
             ],
-            noParse:[], // 是否不解析某些模块
+            noParse:new RegExp(), // 是否不解析某些模块,正则或正则数组
         }
     }
 ```
