@@ -40,7 +40,38 @@ loader是将源代码字符串source code经过一定规则，转换为新的sou
 ## 注意点
 
 rules中的规则顺序是自下向上的，就是后写的规则先进行匹配
+loader就是一个函数，将源代码字符串处理完后返回，在处理文件时，如图片，设置函数的raw为true,则源代码就不会乱码了，而被转为buffer传入函数
 
 ## webpack 5
 
 在webpack 5中，`url-loader`、`file-loader`被`assets loader`取代，该loader有4个模式可选择
+
+## img-loader示例
+
+```javascript
+    function loader(sourceCode){
+        var {limit = 1000, filename="[contenthash:5].[ext]"} = loaderUtil.getOptions(this);
+        //读取options配置
+        var content
+        if(buffer.byteLength <>= limit){ // 转base64大小判断
+            content = getBase64(sourceCode);
+        }else{
+            content = getFilePath.call(this,buffer,filename)
+        }
+        return `module.exports=\`${content}\``
+    }
+    loader.raw = true; //该loader需要使用原始数据
+    function getBase64(buffer){
+        return "data:image/png;base64,"+buffer.toString('base64')
+    }
+
+    function getFilePath(buffer,name){
+        var filename = loaderUtil.interpolateName(this,name,{
+            content:buffer
+        })
+        this.emitFile(filename,buffer); // 直接向最终chunk生成文件
+        return filename;
+    }
+
+    module.exports = loader;
+```
