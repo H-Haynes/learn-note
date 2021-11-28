@@ -4,7 +4,7 @@
 
 ## 执行过程
 
-![life circle](./image/lifeCircle.png)
+![life circle|200](./image/lifeCircle.png)
 
 从主线程进入后，事件循环需要经过6个阶段(队列)，进入队列后查看有没有可执行队列，执行完清空队列后进入下一阶段
 
