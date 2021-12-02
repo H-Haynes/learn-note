@@ -19,7 +19,7 @@ vite在法语中意思为==快==，该构建工具由vue团队开发。
 
 webpack先从入口文件，查找相关依赖，然后进行打包，启动服务器，请求服务器时，将打包结果返回
 
-<img src="webpack.png" height="200"/>
+![vite](./webpack.png)
 
 vite不进行打包，直接开启服务器，使用的koa服务器,根据不同请求处理需要的模块，对该模块进行实时编译。
 由于现代浏览器本身支持ESModule，会自动向依赖的Module发出请求，vite利用了这一点，将开发环境下的模块文件，作为浏览器要执行的文件，而不是像webpack进行打包合并
@@ -32,8 +32,7 @@ vite不进行打包，直接开启服务器，使用的koa服务器,根据不同
 
 当需要打包到生产环境时，vite使用传统的rollup进行打包，因此，vite的优势在于开发阶段，另外，vite利用的是ESModule，所以在代码中**不可使用commonJS**
 
-<img src="vite.png" height="200"/>
-
+![vite](./vite.png)
 
 ## 配置
 
@@ -47,12 +46,9 @@ build:{
 }
 base:"/" //公共基础路径 ，使用页面动态链接时可使用```import.meta.env.BASE_URL```
 
-
 ## 构建后本地预览
 
 可以使用 `npm run preview`来预览生产环境打包后的项目
-
-
 
 ## 环境变量
 
@@ -67,13 +63,14 @@ import.meta.env.PROD: {boolean} 应用是否运行在生产环境。
 import.meta.env.DEV: {boolean} 应用是否运行在开发环境 (永远与 import.meta.env.PROD相反)。
 
 Vite 使用 dotenv 从你的 环境目录 中的下列文件加载额外的环境变量：
-```
 
+```text
 .env                # 所有情况下都会加载
 .env.local          # 所有情况下都会加载，但会被 git 忽略
 .env.[mode]         # 只在指定模式下加载
 .env.[mode].local   # 只在指定模式下加载，但会被 git 忽略
 ```
+
 只有以 VITE_ 为前缀的变量才会暴露给经过 vite 处理的代码
 
 应该将 .local 添加到你的 .gitignore 中
@@ -86,3 +83,16 @@ interface ImportMetaEnv {
   VITE_APP_TITLE: string
   // 更多环境变量...
 }
+
+## 注意⚠️
+
+vite 的开发模式和生产模式，不会变更`process.env.NODE_ENV`，因此一定一定不要使用`process.env.NODE_ENV`去判断动态设置变量，比如：
+
+```javascript
+  {
+    base:process.env.NODE_ENV=='production' ? '/m/' : ''
+  }
+  // 不要这样写！！！！始终会取后面的值！
+```
+
+这坑可坑死我了！
