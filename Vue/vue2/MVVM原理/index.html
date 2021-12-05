@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUE</title>
+</head>
+<body>
+    <div id="app">
+        Hello,{{ user.name }},{{time}}好
+        <span>{{welcome}}</span>
+
+        <input v-model="time" />
+        <ul>
+            <li v-for="(key,index) in fruit">{{index}}:{{key}}</li>
+        </ul>
+    </div>
+
+    <script type="module">
+        import Due from "./core/index.js";
+        window.App = new Due({
+            el:"#app",
+            data:{
+                user:{
+                    name:"何红",
+                    age:24
+                },
+                time:"中午",
+                welcome:"Welcome to Due",
+                fruit:["Apple","Banana"]
+            }
+        })
+    </script>
+</body>
+</html>
