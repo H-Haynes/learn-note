@@ -127,19 +127,22 @@ useReducer可使用第三个参数，第三个为一个函数，其返回值会�
 用于获取上下文数据
 原来的方式:
 
+```javascript
       export default function A(){
           function Test(){
             return <ctx.Consumer>
-                      {value => <h1.>{value}</h1.>}
+                      {value => <h1>{value}</h1>}
                   </ctx.Consumer>
           }
           const ctx = React.createContext();
-          <div.>
+          <div>
             <ctx.provider value="哈哈">
-              <.Test />
+              <Test />
             </ctx.provider>
-          </div.>
+          </div>
       }
+```
+
 使用Hook:
 
     function Test(){

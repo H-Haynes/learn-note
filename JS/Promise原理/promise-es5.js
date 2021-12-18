@@ -148,3 +148,4 @@ myPromise.prototype.race = function(taskList) {
 		})
 	})
 }
+

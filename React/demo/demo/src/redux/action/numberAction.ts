@@ -13,7 +13,7 @@ export function getDecreaseAction(){
         type:actionTypes.Decrease
     }
 }
-export function setNumberAction(val){
+export function setNumberAction(val:any){
     return {
         type:actionTypes.SET,
         payload:val

@@ -7,7 +7,7 @@ import * as numberAction from "./action/numberAction"
  * @param action 描述要做什么操作的对象
  * 约定action格式:{type:'操作类型',payload:'附加数据'}
  */
-function reducer(state,action){
+function reducer(state:any,action:any){
     if(action.type===actionTypes.Increase){
         return state + 1
     }else if(action.type===actionTypes.Decrease){
@@ -20,7 +20,9 @@ function reducer(state,action){
 }
 
 
-const store = createStore(reducer,28);  //28
+// const store = createStore(reducer,28);  //28
+const store = createStore(reducer);  //28
+
 //改变数据,使用action
 // const action = {
 //     type:'increase',
