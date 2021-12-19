@@ -388,7 +388,8 @@ ReactDOM.creactProtal接受两个参数:
 ## React中的事件
 
 React内置的DOM组件中的事件:
-1. 给dcoument注册事件
+
+1. 给document注册事件
 2. 几乎所有的元素的事件处理，均在document的事件中处理的
 3. 在document的时间处理，React均会根据虚拟dom的完成事件函数的调用
 4. 如果在真实dom注册了事件并阻止了冒泡，react事件将不会触发

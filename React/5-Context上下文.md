@@ -242,3 +242,28 @@ Provider可通过value属性对上下文重新赋值
 **如果provider中的value发生变化， 会导致该上下文提供的所有后代元素全部重新渲染，无论该子元素是否有优化(忽略shouldComponentUpdate返回值)**
 
 `provider value`设置为`state`的属性
+
+## PureComponent 纯组件
+
+用于避免不必要的渲染(运行render),从而提高效率
+
+PureComponent是一个组件，如果某个组件继承自该组件，则该组件的shouldComponentUpdate会进行优化，对属性和状态进行浅比较，如果相等则不会重新渲染
+
+1. PureComponent是进行浅比较
+   1. 为了效率应尽量使用PureComponent,
+   2. 要求==不该动之前的状态==，永远创建新的覆盖之前的，而不是在之前的状态改变后重新赋值回去（Immutable,将之前的状态当作不可变对象）
+2. 函数组件使用React.memo制作纯组件
+   1. 本质就是一个HOC,外面套一层Pure类组件，render返回传入的那个组件
+
+```javascript
+    // 类纯组件
+    export default class Comp extends React.PureComponent{
+
+    }
+
+    // 函数式纯组件，使用memo制作
+    function Comp1(props){
+
+    }
+    export default React.memo(Comp1);
+```
