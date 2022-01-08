@@ -33,6 +33,10 @@
    5. 使用什么方式控制,一般使用 shell
 5. 完成后刷新页面，就能看到runner信息了,点击编辑，设置该runner允许访问的目录
 
+## runner 执行不及时
+
+修改`/etc/gitlab-runner/config.toml`中check_interval的值，默认为0，会很慢，可以改一个数字，为间隔秒数，建议5
+
 ## 自动化部署
 
 1. 项目中新建.gitlab-ci.yml文件

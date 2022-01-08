@@ -17,7 +17,7 @@ rtmp模块需要使用配置，不能使用直接安装的nginx
 3. 安装PREC模块 `yum -y install pcre-devel`
 4. 安装openSSL模块  `yum -y install openssl openssl-devel`
 5. `cd nginx`
-6. 配置模块 `./configure --add-module=/usr/local/nginx-rtmp-module-master --prefix=/usr/local/src/nginx  --with-http_ssl_module`,其中prefix是指生成的nginx所在位置(后面如果要用gzip，加上`--width-http_gzip_static_module`)
+6. 配置模块 `./configure --add-module=/usr/local/nginx-rtmp-module-master --prefix=/usr/local/src/nginx  --with-http_ssl_module`,其中prefix是指生成的nginx所在位置(后面如果要用gzip，加上`--with-http_gzip_static_module`)
 7. 编译:`make && make install`
 8. 编译过程若出现`ngx_murmur_hash2`错误是将警告当成了错误处理，修改nginx目录下objs/Makefile文件中第二行中的'-Werror',`vi objs/Makefile`
 经测试centos 7.9以上会出下列错误
