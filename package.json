@@ -5,6 +5,7 @@
     "class-validator": "^0.12.2",
     "console-color-mr": "^2.0.1",
     "create-vite-app": "^1.21.0",
+    "egg-init": "^2.3.0",
     "react": "^17.0.2",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
