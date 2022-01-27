@@ -1,0 +1,304 @@
+"filename", "language", "Markdown", "JSON", "JSON with Comments", "HTML", "JavaScript", "TypeScript", "CSS", "XML", "JavaScript React", "Vue", "TypeScript React", "Python", "comment", "blank", "total"
+"/Users/fan/project/learn-note/BackEnd/oAuth.md", "Markdown", 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 41, 128
+"/Users/fan/project/learn-note/JAVA/1.JAVA历史.md", "Markdown", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 44
+"/Users/fan/project/learn-note/JAVA/2.跨平台机制与环境搭建.md", "Markdown", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 32
+"/Users/fan/project/learn-note/JAVA/3.数据类型.md", "Markdown", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 83
+"/Users/fan/project/learn-note/JAVA/4.类型转化.md", "Markdown", 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 45
+"/Users/fan/project/learn-note/JAVA/5.运算符.md", "Markdown", 109, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 140
+"/Users/fan/project/learn-note/JAVA/6.语法结构.md", "Markdown", 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 29
+"/Users/fan/project/learn-note/JAVA/7.数组.md", "Markdown", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 69
+"/Users/fan/project/learn-note/JAVA/8.排序.md", "Markdown", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/fan/project/learn-note/JAVA/OOP.md", "Markdown", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 82
+"/Users/fan/project/learn-note/JAVA/异常.md", "Markdown", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 24
+"/Users/fan/project/learn-note/JS/ES6.md", "Markdown", 323, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 93, 416
+"/Users/fan/project/learn-note/JS/HTML5.md", "Markdown", 206, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 293
+"/Users/fan/project/learn-note/JS/Promise原理/promise-es5.js", "JavaScript", 0, 0, 0, 0, 111, 0, 0, 0, 0, 0, 0, 0, 13, 28, 152
+"/Users/fan/project/learn-note/JS/Promise原理/promise-es6.ts", "TypeScript", 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 45, 19, 163
+"/Users/fan/project/learn-note/JS/map.js", "JavaScript", 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 0, 7, 3, 102
+"/Users/fan/project/learn-note/JS/事件循环.md", "Markdown", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 43
+"/Users/fan/project/learn-note/JS/原型链.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 39
+"/Users/fan/project/learn-note/JS/完美克隆.md", "Markdown", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 47
+"/Users/fan/project/learn-note/JS/执行期上下文.md", "Markdown", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 65
+"/Users/fan/project/learn-note/JS/浏览器执行机制.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 31
+"/Users/fan/project/learn-note/JS/类型补充.md", "Markdown", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 23
+"/Users/fan/project/learn-note/JS/类型转换.md", "Markdown", 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 116
+"/Users/fan/project/learn-note/JS/继承.md", "Markdown", 97, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 126
+"/Users/fan/project/learn-note/JS/网络.md", "Markdown", 109, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 151
+"/Users/fan/project/learn-note/JS/跨域访问.md", "Markdown", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/fan/project/learn-note/JS/面向对象与基于对象.md", "Markdown", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 7
+"/Users/fan/project/learn-note/Python/demo/基础数据类型.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 24, 13, 71
+"/Users/fan/project/learn-note/Python/demo/控制结构.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 14, 36, 109
+"/Users/fan/project/learn-note/Python/基础数据类型.md", "Markdown", 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 165
+"/Users/fan/project/learn-note/Python/控制结构.md", "Markdown", 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 134
+"/Users/fan/project/learn-note/README.md", "Markdown", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4
+"/Users/fan/project/learn-note/React/1-react笔记.md", "Markdown", 303, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 98, 401
+"/Users/fan/project/learn-note/React/2-React的生命周期.md", "Markdown", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 111
+"/Users/fan/project/learn-note/React/3-HOC.md", "Markdown", 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 54
+"/Users/fan/project/learn-note/React/4-ref.md", "Markdown", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 109
+"/Users/fan/project/learn-note/React/5-Context上下文.md", "Markdown", 210, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 270
+"/Users/fan/project/learn-note/React/6-renderProps-插槽-错误边界-事件.md", "Markdown", 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 112
+"/Users/fan/project/learn-note/React/7-渲染原理.md", "Markdown", 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 89
+"/Users/fan/project/learn-note/React/8-严格模式.md", "Markdown", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 29
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/1-StateHook.md", "Markdown", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 58
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/2-EffectHook.md", "Markdown", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 54
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/3-自定义HOOK.md", "Markdown", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 36
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/4-ContextHook.md", "Markdown", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/5-callbackHook.md", "Markdown", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 36
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/6-MemoHook.md", "Markdown", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 21
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/7-RefHook.md", "Markdown", 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 51
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/8-imperativeHook.md", "Markdown", 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 27
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/9-其他.md", "Markdown", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/fan/project/learn-note/React/HOOK(v>16.8)/缘由.md", "Markdown", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 14
+"/Users/fan/project/learn-note/React/HOOK.md", "Markdown", 175, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 58, 233
+"/Users/fan/project/learn-note/React/NavLink封装.md", "Markdown", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/fan/project/learn-note/React/demo/demo/README.md", "Markdown", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 69
+"/Users/fan/project/learn-note/React/demo/demo/package-lock.json", "JSON", 0, 37004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37005
+"/Users/fan/project/learn-note/React/demo/demo/package.json", "JSON", 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 40
+"/Users/fan/project/learn-note/React/demo/demo/public/index.html", "HTML", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 23, 1, 44
+"/Users/fan/project/learn-note/React/demo/demo/public/manifest.json", "JSON", 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26
+"/Users/fan/project/learn-note/React/demo/demo/src/App.css", "CSS", 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 6, 47
+"/Users/fan/project/learn-note/React/demo/demo/src/App.js", "JavaScript", 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 43, 8, 88
+"/Users/fan/project/learn-note/React/demo/demo/src/App.test.js", "JavaScript", 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"/Users/fan/project/learn-note/React/demo/demo/src/Context/NewContext.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 5, 34
+"/Users/fan/project/learn-note/React/demo/demo/src/HOC/HocTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 6, 20
+"/Users/fan/project/learn-note/React/demo/demo/src/HOC/RouteGuard.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 15, 15, 71
+"/Users/fan/project/learn-note/React/demo/demo/src/Service/fetch.js", "JavaScript", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/fan/project/learn-note/React/demo/demo/src/Testmodal.js", "JavaScript", 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 6, 41
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/BannerTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 4, 48
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/ControlButton/index.css", "CSS", 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 30
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/ControlButton/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 3, 23
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/ControlDot/index.css", "CSS", 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 1, 24
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/ControlDot/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 0, 4, 38
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/PicContainer/index.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/PicContainer/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 2, 11, 82
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/index.css", "CSS", 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 102, 0, 0, 0, 0, 10, 112
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner1/BannerItem.js", "JavaScript", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner1/index.css", "CSS", 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 1, 5, 43
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Banner1/index.js", "JavaScript", 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 0, 1, 9, 65
+"/Users/fan/project/learn-note/React/demo/demo/src/components/CheckBoxGroup/CheckBoxGroupTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 4, 32
+"/Users/fan/project/learn-note/React/demo/demo/src/components/CheckBoxGroup/README.md", "Markdown", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 20
+"/Users/fan/project/learn-note/React/demo/demo/src/components/CheckBoxGroup/index.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fan/project/learn-note/React/demo/demo/src/components/CheckBoxGroup/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 6, 7, 58
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ContextForm/FormButton.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 1, 22
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ContextForm/FormInput.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 2, 32
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ContextForm/Test.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 3, 30
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ContextForm/formContext.js", "JavaScript", 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ContextForm/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 2, 46
+"/Users/fan/project/learn-note/React/demo/demo/src/components/EffectHook/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 3, 11
+"/Users/fan/project/learn-note/React/demo/demo/src/components/FormTest/index.css", "CSS", 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 4
+"/Users/fan/project/learn-note/React/demo/demo/src/components/FormTest/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 86, 0, 0, 0, 3, 9, 98
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Grail/index.css", "CSS", 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 17
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Grail/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 6, 37
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Modal/index.css", "CSS", 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 14
+"/Users/fan/project/learn-note/React/demo/demo/src/components/Modal/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 0, 7, 41
+"/Users/fan/project/learn-note/React/demo/demo/src/components/ProtectedRoute/index.js", "JavaScript", 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 4, 4, 25
+"/Users/fan/project/learn-note/React/demo/demo/src/components/RadioGroup/README.md", "Markdown", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 20
+"/Users/fan/project/learn-note/React/demo/demo/src/components/RadioGroup/RadioGroupTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 4, 32
+"/Users/fan/project/learn-note/React/demo/demo/src/components/RadioGroup/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 8, 47
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SelectGroup/README.md", "Markdown", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 20
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SelectGroup/SelectGroupTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 2, 30
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SelectGroup/index.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SelectGroup/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 9, 44
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SongList/SongListTest.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 11, 3, 60
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SongList/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 4, 24
+"/Users/fan/project/learn-note/React/demo/demo/src/components/SongList/songlist.css", "CSS", 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 1, 0, 63
+"/Users/fan/project/learn-note/React/demo/demo/src/components/StateHook/index.css", "CSS", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/fan/project/learn-note/React/demo/demo/src/components/StateHook/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"/Users/fan/project/learn-note/React/demo/demo/src/components/common/Pagination/index.css", "CSS", 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 1, 23
+"/Users/fan/project/learn-note/React/demo/demo/src/components/common/Pagination/index.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 9, 3, 76
+"/Users/fan/project/learn-note/React/demo/demo/src/index.css", "CSS", 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/fan/project/learn-note/React/demo/demo/src/index.js", "JavaScript", 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 6, 14
+"/Users/fan/project/learn-note/React/demo/demo/src/logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 8
+"/Users/fan/project/learn-note/React/demo/demo/src/myHook/useReducer.js", "JavaScript", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 5, 1, 16
+"/Users/fan/project/learn-note/React/demo/demo/src/pages/home.js", "JavaScript", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/fan/project/learn-note/React/demo/demo/src/pages/login.js", "JavaScript", 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/fan/project/learn-note/React/demo/demo/src/pages/person.js", "JavaScript", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/fan/project/learn-note/React/demo/demo/src/react-app-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2
+"/Users/fan/project/learn-note/React/demo/demo/src/redux/action/action-type.ts", "TypeScript", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"/Users/fan/project/learn-note/React/demo/demo/src/redux/action/numberAction.ts", "TypeScript", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 3, 3, 23
+"/Users/fan/project/learn-note/React/demo/demo/src/redux/index.ts", "TypeScript", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 13, 7, 39
+"/Users/fan/project/learn-note/React/demo/demo/src/serviceWorker.js", "JavaScript", 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 31, 13, 138
+"/Users/fan/project/learn-note/React/demo/demo/src/setupTests.js", "JavaScript", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 4, 1, 6
+"/Users/fan/project/learn-note/React/demo/demo/src/utils/commonTypes.js", "JavaScript", 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 3, 12
+"/Users/fan/project/learn-note/React/demo/demo/tsconfig.json", "JSON with Comments", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26
+"/Users/fan/project/learn-note/React/demo/package-lock.json", "JSON", 0, 673, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 674
+"/Users/fan/project/learn-note/React/demo/redux.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 31
+"/Users/fan/project/learn-note/React/dva.md", "Markdown", 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 168
+"/Users/fan/project/learn-note/React/redux.md", "Markdown", 132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 170
+"/Users/fan/project/learn-note/React/umiJS.md", "Markdown", 118, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 158
+"/Users/fan/project/learn-note/React/节点更新.md", "Markdown", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 62
+"/Users/fan/project/learn-note/React/路由.md", "Markdown", 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 317
+"/Users/fan/project/learn-note/TypeScript/demo/src/class.ts", "TypeScript", 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 8, 18, 131
+"/Users/fan/project/learn-note/TypeScript/demo/src/common/descriptor.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 47, 24, 93
+"/Users/fan/project/learn-note/TypeScript/demo/src/dictionary/dic.md", "Markdown", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 18
+"/Users/fan/project/learn-note/TypeScript/demo/src/dictionary/dictionary.ts", "TypeScript", 0, 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 11, 88
+"/Users/fan/project/learn-note/TypeScript/demo/src/enum.ts", "TypeScript", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 16, 3, 33
+"/Users/fan/project/learn-note/TypeScript/demo/src/interface.js", "JavaScript", 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 1, 2, 43
+"/Users/fan/project/learn-note/TypeScript/demo/src/interface.ts", "TypeScript", 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 2, 7, 70
+"/Users/fan/project/learn-note/TypeScript/demo/src/poker/deck.ts", "TypeScript", 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 18, 7, 119
+"/Users/fan/project/learn-note/TypeScript/demo/src/poker/enums.ts", "TypeScript", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 4, 25
+"/Users/fan/project/learn-note/TypeScript/demo/src/poker/index.ts", "TypeScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/fan/project/learn-note/TypeScript/demo/src/poker/types.ts", "TypeScript", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 1, 8, 21
+"/Users/fan/project/learn-note/TypeScript/demo/src/声明文件.ts", "TypeScript", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 3, 2, 13
+"/Users/fan/project/learn-note/TypeScript/demo/src/泛型.ts", "TypeScript", 0, 0, 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 4, 12, 82
+"/Users/fan/project/learn-note/TypeScript/demo/src/类型演算.ts", "TypeScript", 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 14, 14, 54
+"/Users/fan/project/learn-note/TypeScript/demo/src/装饰器.ts", "TypeScript", 0, 0, 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 49, 49, 225
+"/Users/fan/project/learn-note/TypeScript/demo/tsconfig.json", "JSON with Comments", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 7, 69
+"/Users/fan/project/learn-note/TypeScript/tsconfig.json", "JSON with Comments", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 6, 70
+"/Users/fan/project/learn-note/TypeScript/typescript.md", "Markdown", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 39
+"/Users/fan/project/learn-note/TypeScript/utilityTypes.md", "Markdown", 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 34
+"/Users/fan/project/learn-note/TypeScript/开始.md", "Markdown", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 10
+"/Users/fan/project/learn-note/TypeScript/模块化.md", "Markdown", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 70
+"/Users/fan/project/learn-note/TypeScript/泛型.md", "Markdown", 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 98
+"/Users/fan/project/learn-note/TypeScript/类.md", "Markdown", 215, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 283
+"/Users/fan/project/learn-note/TypeScript/类型演算及声明文件.md", "Markdown", 109, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 142
+"/Users/fan/project/learn-note/TypeScript/类型约束.md", "Markdown", 260, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 356
+"/Users/fan/project/learn-note/TypeScript/装饰器.md", "Markdown", 104, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 149
+"/Users/fan/project/learn-note/Vue/SSR/说明.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 30
+"/Users/fan/project/learn-note/Vue/vue2/MVVM与MVC.md", "Markdown", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 22
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/gammer/for.js", "JavaScript", 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 30, 13, 95
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/gammer/model.js", "JavaScript", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 0, 12
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/index.js", "JavaScript", 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/instance/index.js", "JavaScript", 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/instance/init.js", "JavaScript", 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 6, 6, 29
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/instance/mount.js", "JavaScript", 0, 0, 0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 27, 13, 123
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/instance/proxy.js", "JavaScript", 0, 0, 0, 0, 103, 0, 0, 0, 0, 0, 0, 0, 40, 22, 165
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/instance/render.js", "JavaScript", 0, 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0, 26, 37, 191
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/util.js", "JavaScript", 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 3, 38
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/core/vdom/vnode.js", "JavaScript", 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 10, 1, 28
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/index.html", "HTML", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 36
+"/Users/fan/project/learn-note/Vue/vue2/MVVM原理/细节.md", "Markdown", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8
+"/Users/fan/project/learn-note/Vue/vue2/history配置.md", "Markdown", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 41
+"/Users/fan/project/learn-note/Vue/vue2/install与use.md", "Markdown", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 15
+"/Users/fan/project/learn-note/Vue/vue2/vue生命周期.md", "Markdown", 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 41
+"/Users/fan/project/learn-note/Vue/vue2/原理面试集锦.md", "Markdown", 228, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 319
+"/Users/fan/project/learn-note/Vue/vue2/导航守卫.md", "Markdown", 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 35
+"/Users/fan/project/learn-note/Vue/vue2/数据传递.md", "Markdown", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 70
+"/Users/fan/project/learn-note/Vue/vue3/1-vite构建工具.md", "Markdown", 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 99
+"/Users/fan/project/learn-note/Vue/vue3/2-vue3差异.md", "Markdown", 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 114
+"/Users/fan/project/learn-note/Vue/vue3/3-vue2与vue3效率提升的对比.md", "Markdown", 74, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 108
+"/Users/fan/project/learn-note/Vue/vue3/4-API和响应式数据的变化.md", "Markdown", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 36
+"/Users/fan/project/learn-note/Vue/vue3/5-模板中的变化.md", "Markdown", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 17
+"/Users/fan/project/learn-note/Vue/vue3/6-打包部署.md", "Markdown", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 29
+"/Users/fan/project/learn-note/Vue/vue3/compositionAPI.md", "Markdown", 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 67
+"/Users/fan/project/learn-note/Vue/vue3/demo1/index.html", "HTML", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14
+"/Users/fan/project/learn-note/Vue/vue3/demo1/package.json", "JSON", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 23
+"/Users/fan/project/learn-note/Vue/vue3/demo1/postcss.config.js", "JavaScript", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/App.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 6, 26
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/CheckEditor.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 3, 58
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/HelloWorld.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 2, 20
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/goods/index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 2, 11
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/nav/index.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 0, 4, 70
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/useAddTodo.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 1, 2, 28
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/useDelTodo.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/useFilter.ts", "TypeScript", 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 6, 5, 51
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/useGetTodo.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/useTodoStatus.ts", "TypeScript", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/composition/util.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 4, 0, 29
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/components/todoList/index.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 0, 0, 2, 97
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/index.css", "CSS", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 3, 28
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/main.js", "JavaScript", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/router/index.ts", "TypeScript", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/shims.d.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 2, 1, 8
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/views/home.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 1, 21
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/views/test.vue", "Vue", 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 4, 34
+"/Users/fan/project/learn-note/Vue/vue3/demo1/src/vite.config.js", "JavaScript", 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/fan/project/learn-note/Vue/vue3/demo1/tailwind.config.js", "JavaScript", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12
+"/Users/fan/project/learn-note/Vue/vue3/demo1/tsconfig.json", "JSON with Comments", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 13
+"/Users/fan/project/learn-note/Vue/vue3/reactivity响应式.md", "Markdown", 157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 52, 210
+"/Users/fan/project/learn-note/Vue/vue3/组件中的变化.md", "Markdown", 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 71
+"/Users/fan/project/learn-note/WebGL/circle.html", "HTML", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 80
+"/Users/fan/project/learn-note/WebGL/line.html", "HTML", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"/Users/fan/project/learn-note/WebGL/myGl.html", "HTML", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 0, 120, 10, 257
+"/Users/fan/project/learn-note/WebGL/point.html", "HTML", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 144
+"/Users/fan/project/learn-note/WebGL/rect.html", "HTML", 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 73
+"/Users/fan/project/learn-note/WebGL/ring.html", "HTML", 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 67
+"/Users/fan/project/learn-note/WebGL/triangle.html", "HTML", 0, 0, 0, 171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 186
+"/Users/fan/project/learn-note/WebGL/webGL.js", "JavaScript", 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 4, 9, 90
+"/Users/fan/project/learn-note/WebGL/基础.md", "Markdown", 163, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 225
+"/Users/fan/project/learn-note/dataBase/1-基础知识.md", "Markdown", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 23
+"/Users/fan/project/learn-note/dataBase/2-MySql基础指令.md", "Markdown", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 39
+"/Users/fan/project/learn-note/dataBase/3-数据库设计.md", "Markdown", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 27
+"/Users/fan/project/learn-note/dataBase/MySQL/1-初识.md", "Markdown", 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 73
+"/Users/fan/project/learn-note/dataBase/MySQL/2-数据类型及创建.md", "Markdown", 89, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 116
+"/Users/fan/project/learn-note/dataBase/MySQL/3-增删改查.md", "Markdown", 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 70
+"/Users/fan/project/learn-note/dataBase/MySQL/4-函数和分组.md", "Markdown", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 79
+"/Users/fan/project/learn-note/dataBase/MySQL/5-视图.md", "Markdown", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10
+"/Users/fan/project/learn-note/dataBase/mongoDB.md", "Markdown", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 69
+"/Users/fan/project/learn-note/dataBase/redis.md", "Markdown", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 108
+"/Users/fan/project/learn-note/dataBase/小程序云数据库.md", "Markdown", 107, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 142
+"/Users/fan/project/learn-note/deploy/gitlab自动化部署/runner.md", "Markdown", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 70
+"/Users/fan/project/learn-note/deploy/gitlab自动化部署/安装.md", "Markdown", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 66
+"/Users/fan/project/learn-note/deploy/gitlab自动化部署/配置.md", "Markdown", 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 91
+"/Users/fan/project/learn-note/deploy/nginx及直播流媒体/开启gzip功能.md", "Markdown", 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 46
+"/Users/fan/project/learn-note/deploy/nginx及直播流媒体/自定义安装及rtmp直播流媒体服务.md", "Markdown", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 98
+"/Users/fan/project/learn-note/mobile/meta标签.md", "Markdown", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 58
+"/Users/fan/project/learn-note/mobile/移动端差异化问题.md", "Markdown", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 42
+"/Users/fan/project/learn-note/mobile/移动端样式重置.md", "Markdown", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 48
+"/Users/fan/project/learn-note/mobile/移动端的事件.md", "Markdown", 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 67
+"/Users/fan/project/learn-note/mobile/移动端适配方案.md", "Markdown", 124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 163
+"/Users/fan/project/learn-note/mp/小程序.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 35
+"/Users/fan/project/learn-note/nodeJs/1 - node简介和Linux安装.md", "Markdown", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 103
+"/Users/fan/project/learn-note/nodeJs/10-文件IO及文件流.md", "Markdown", 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 127
+"/Users/fan/project/learn-note/nodeJs/11-net模块.md", "Markdown", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 55
+"/Users/fan/project/learn-note/nodeJs/12-http模块.md", "Markdown", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 41
+"/Users/fan/project/learn-note/nodeJs/13-https协议及https模块.md", "Markdown", 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 93
+"/Users/fan/project/learn-note/nodeJs/14-node生命周期(事件循环).md", "Markdown", 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 89
+"/Users/fan/project/learn-note/nodeJs/15-EventEmitter.md", "Markdown", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 25
+"/Users/fan/project/learn-note/nodeJs/16-mysql2及xss.md", "Markdown", 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 83
+"/Users/fan/project/learn-note/nodeJs/17-ORM.md", "Markdown", 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 144
+"/Users/fan/project/learn-note/nodeJs/2 - Linux命令与权限.md", "Markdown", 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 106
+"/Users/fan/project/learn-note/nodeJs/3 - HTTP协议.md", "Markdown", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 104
+"/Users/fan/project/learn-note/nodeJs/4-后端的规范与思想.md", "Markdown", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 83
+"/Users/fan/project/learn-note/nodeJs/5 - http模块.md", "Markdown", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 34
+"/Users/fan/project/learn-note/nodeJs/6 - Express.md", "Markdown", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 106
+"/Users/fan/project/learn-note/nodeJs/7 - global对象.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 28
+"/Users/fan/project/learn-note/nodeJs/8 - 模块化细节原理及自动补全.md", "Markdown", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 111
+"/Users/fan/project/learn-note/nodeJs/9-基本内置模块.md", "Markdown", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 49
+"/Users/fan/project/learn-note/nodeJs/Egg/1-start.md", "Markdown", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 43
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/app/controller/home.js", "JavaScript", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/app/router.js", "JavaScript", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/config/config.default.js", "JavaScript", 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/package.json", "JSON", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/agent_config.json", "JSON", 0, 431, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 431
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/agent_config_meta.json", "JSON", 0, 267, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 267
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/agent_timing_28731.json", "JSON", 0, 362, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 362
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/application_config.json", "JSON", 0, 477, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 477
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/application_config_meta.json", "JSON", 0, 267, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 267
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/application_timing_28732.json", "JSON", 0, 514, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 514
+"/Users/fan/project/learn-note/nodeJs/Egg/demo/run/router.json", "JSON", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/fan/project/learn-note/nodeJs/Koa/1-简介.md", "Markdown", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 53
+"/Users/fan/project/learn-note/nodeJs/Koa/2-API.md", "Markdown", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 50
+"/Users/fan/project/learn-note/nodeJs/Koa/3-中间件.md", "Markdown", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 18
+"/Users/fan/project/learn-note/nodeJs/Koa/index.js", "JavaScript", 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 1, 7, 33
+"/Users/fan/project/learn-note/nodeJs/Koa/koa-static-middle.js", "JavaScript", 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 1, 3, 33
+"/Users/fan/project/learn-note/nodeJs/Koa/package.json", "JSON", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"/Users/fan/project/learn-note/nodeJs/Koa/public/index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fan/project/learn-note/nodeJs/demo/10.js", "JavaScript", 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 1, 12, 74
+"/Users/fan/project/learn-note/nodeJs/demo/12.js", "JavaScript", 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 1, 8, 50
+"/Users/fan/project/learn-note/nodeJs/demo/9.js", "JavaScript", 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 1, 5, 33
+"/Users/fan/project/learn-note/nodeJs/demo/db/models/pwdModle.js", "JavaScript", 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 2, 16
+"/Users/fan/project/learn-note/nodeJs/demo/db/models/userModle.js", "JavaScript", 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"/Users/fan/project/learn-note/nodeJs/demo/db/orm.js", "JavaScript", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"/Users/fan/project/learn-note/nodeJs/demo/index.js", "JavaScript", 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 4, 17
+"/Users/fan/project/learn-note/nodeJs/demo/package.json", "JSON", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 19
+"/Users/fan/project/learn-note/note/laravel blade随笔.md", "Markdown", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 73
+"/Users/fan/project/learn-note/note/冷知识.md", "Markdown", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 16
+"/Users/fan/project/learn-note/note/罕见bug解决方案.md", "Markdown", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 28
+"/Users/fan/project/learn-note/package.json", "JSON", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"/Users/fan/project/learn-note/webpack/1-入口和出口.md", "Markdown", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 46
+"/Users/fan/project/learn-note/webpack/1-浏览器中使用模块化.md", "Markdown", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 22
+"/Users/fan/project/learn-note/webpack/2-loader.md", "Markdown", 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 77
+"/Users/fan/project/learn-note/webpack/3-plugin.md", "Markdown", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 30
+"/Users/fan/project/learn-note/webpack/4-环境变量.md", "Markdown", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 51
+"/Users/fan/project/learn-note/webpack/5-其他配置说明.md", "Markdown", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 105
+"/Users/fan/project/learn-note/webpack/6-开发服务器.md", "Markdown", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 28
+"/Users/fan/project/learn-note/webpack/7-性能优化.md", "Markdown", 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 64
+"/Users/fan/project/learn-note/webpack/8-分包.md", "Markdown", 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 150
+"/Users/fan/project/learn-note/webpack/9-代码压缩.md", "Markdown", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 58
+"/Users/fan/project/learn-note/webpack/webpack打包过程.md", "Markdown", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 74
+"/Users/fan/project/learn-note/webpack/优秀的插件.md", "Markdown", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 103
+"/Users/fan/project/learn-note/webpack/打包优化.md", "Markdown", 93, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 114
+"Total", "-", 8746, 40164, 58, 698, 1396, 938, 308, 7, 994, 304, 9, 93, 837, 4087, 58639
