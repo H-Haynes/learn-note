@@ -7,7 +7,7 @@
 vue3使用createApp来创建vue应用,(event bus将无法再使用了？)
 ```createApp(根组件).mount(根节点)```
 
-在vue2中，若一个页面有多个vue应用，在私用插件等东西时，需要使用Vue.use\mixin\component等，将会影响到所有的vue应用
+在vue2中，若一个页面有多个vue应用，在使用插件等东西时，需要使用Vue.use\mixin\component等，将会影响到所有的vue应用
 ```new Vue().$mount(根节点)```
 
 原因：vue2的全局构造带来了诸多问题

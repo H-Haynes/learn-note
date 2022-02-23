@@ -18,7 +18,7 @@
 
          3. 树形结构遍历`AST`找到所有依赖
 
-         4. 将依赖记录到`dependenies`数组，(将模块路径放数组里)
+         4. 将依赖记录到`dependencies`数组，(将模块路径放数组里)
 
          5. 替换依赖函数，将`require`改为`__webpack_require`,依赖函数参数改为模块id(转换后的代码，依然是一个字符串)
 
@@ -54,9 +54,6 @@
       		4.  合并`chunk assets`,将所有chunk 合并成一个`总chunk assets`,生成HASH，
 
 3. 输出(`emit`)。webpack利用`fs`模块，根据变异产生的`总asset`生成对应的文件
-
-
-
 
 
 ```javascript

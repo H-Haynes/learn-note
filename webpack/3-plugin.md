@@ -25,5 +25,5 @@ plugin本质是一个带有apply方法的对象,一般将其做为构造函数
 ```
 
 compiler对象是在打包初始化阶段构建的，整个webpack打包期间只有一个
-apple会在创建好compiler对象后自动调用
+apply会在创建好compiler对象后自动调用
 compiler有大量的hook,plugin开发时可以注册这些hook，参与编译和生成

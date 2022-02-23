@@ -23,18 +23,15 @@
 
 `publicPath:process.env.NODE_ENV =='production' ?  '/netease/':"/",`
 
-
 ## Nginx配置
 
 增加location配置
 
-
-	location /netease {
-		alias /var/www/netease/;
-		try_files $uri $uri/ /netease/index.html;
-	}
+```nginx
+ location /netease {
+  alias /var/www/netease/;
+  try_files $uri $uri/ /netease/index.html;
+ }
+```
 
 如此便可放心使用history模式了！
-
-
-
