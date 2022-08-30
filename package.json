@@ -11,7 +11,7 @@
     "react-router-dom": "^6.2.1",
     "reflect-metadata": "^0.1.13",
     "typescript": "^3.9.2",
-    "vite": "^2.1.5"
+    "vite": "^2.9.13"
   },
   "devDependencies": {
     "@webpack-cli/generators": "^2.4.1"
